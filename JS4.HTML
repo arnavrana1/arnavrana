@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#a,#b{
+border:3px solid black;
+}
+</style>
+<title>CANVAS</title>
+</head>
+<body>
+<canvas height=
+"400px" width=
+"500px" id=
+"a">
+</canvas>
+<canvas height=
+"400px" width=
+"400px" id=
+"b">
+</canvas>
+<script>
+var x = document.getElementById("a");
+var y = x.getContext('2d');
+y.fillText ("HELLO WORLD",60,300);
+y.fillRect(190,70,120,100);
+y.moveTo(40,50);
+y.lineTo(150,200);
+y.stroke();
+var xx = document.getElementById("b");
+var yy = xx.getContext('2d');
+yy.moveTo(0,0);
+yy.lineTo(400,400);
+yy.moveTo(400,0);
+yy.lineTo(0,400);
+yy.moveTo(0,200);
+yy.lineTo(400,200);
+yy.moveTo(200,0);
+yy.lineTo(200,400);
+yy.stroke();
+</script>
+</body>
+</html>

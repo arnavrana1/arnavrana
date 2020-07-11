@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<title>Form validation</title>
+</head>
+<body>
+<script>
+function validate()
+{
+var username =
+document.getElementById("uname").value;
+var password =
+document.getElementById("pass").value;
+if(username==
+"")
+{
+alert("Fill the Username");
+return false;
+}
+else if(password==
+"")
+{
+alert("Fill the Password");
+return false;
+}
+else{
+return true;
+}
+}
+</script>
+<form action=
+"message.html" onsubmit=
+"return
+validate()">
+<input type=
+"text" placeholder=
+"Username"
+id=
+"uname"><br>
+<input type=
+"password"
+placeholder=
+"Password" id=
+"pass"><br>
+<button type=
+"submit">SUBMIT</button>
+</form>
+</body>
+</html>
