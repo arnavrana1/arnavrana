@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<title>Javascript</title>
+<style>
+body{
+background-image:url(https://png.pngtree.com/thumb_back/fw800/back_our/20190623/ourmid/pngtree-simple-technology-quality-light-effect-hd-background-image_237701.jpg);
+}
+#a{
+height:400px;
+width:650px;
+}
+#a:hover{
+border-radius:15%;
+}
+#b{
+text-align:center;
+font-family:broadway;
+word-spacing:10px;
+letter-spacing:3px;
+font-size:70px;
+color:cyan;
+}
+</style>
+</head>
+<body>
+<script>
+/*function show()
+{
+var x = document.getElementById("fname").value;
+var y = document.getElementById("lname").value;
+document.write("<h1>"+x+" "+y+"</h1>");
+}*/
+function change1()
+{
+document.getElementById("a").style.background =
+"blue";
+document.getElementById("b").style.color =
+"red";
+}
+function change2()
+{
+document.getElementById("a").style.background =
+"gray";
+document.getElementById("b").style.color =
+"yellow";
+}
+function change3()
+{
+document.getElementById("a").style.background =
+"yellow";
+document.getElementById("b").style.color =
+"gray";
+}
+function change4()
+{
+document.getElementById("a").style.background =
+"red";
+document.getElementById("b").style.color =
+"blue";
+}
+</script>
+<!--
+<form>
+<input id="fname" type="text" placeholder="First
+Name"><br>
+<input id="lname" type="text" placeholder="Last
+Name"><br>
+<button type="submit"
+ondbclick="show()">SUBMIT</button>
+</form>
+-->
+<div id="a">
+<p id="b">WELCOME TO MY WEBSITE</p>
+</div>
+<button onclick="change1()">Red</button>
+<button onclick="change2()">Yellow</button>
+<button onclick="change3()">Gray</button>
+<button onclick="change4()">Blue</button>
+</body>
+</html>
