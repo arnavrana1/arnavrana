@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<title>Calculator</title>
+<style>
+body{
+    margin-top: 30px;
+		margin-left: 300px;
+        background-color: cornflowerblue;
+#btnl
+{
+      height: 100px;
+	    width: 180px;
+		background-color: black;
+		color:darkblue;
+		border - radius: 20 px;
+		font-size : 40px;
+        font-weight: bold;
+        margin-top: 10px;
+		margin-left: 10px;
+        border: none;
+}
+#btn2
+{
+      height: 100px;
+	    width: 180px;
+		background-color: burlywood;
+		color:rgba(255, 0, 0, 0.63);
+		border-radius: 20px;
+		font-size: 40px;
+		font-weight: bold;
+        margin-top: 10px;
+		margin-left: 10px;
+        border: none;
+}
+#btn3
+{
+      height: 100px;
+	    width: 180px;
+		background-color: red;
+		color:black;
+		border - radius: 20px;
+		font-size: 50px;
+		font-weight: bold;
+        margin-top: 10px;
+		margin-left: 10px;
+        border: none;
+}
+#inp{
+{
+      height: 90px;
+	    width: 780px;
+		background-color: cyan;
+		color:darkblue;
+		border - radius: 20px;
+        border: none;
+        text-align: right;
+		font-size: 60px;
+        cursor: not-allowed
+}
+</style>
+<script>
+ function insert(num)
+ {
+     document.myform.inputval.value = "";
+ }
+ function clearInput()
+ {
+     document.myform.inputval.value = "";
+ }
+ function finalValue()
+ {
+    var exp =  document.myform.inputval.value;
+     document.myform.inputval.value =eval(exp);
+ }
+</script>
+</head>
+<body>
+<form name="myform">
+      <input name="inputval" type="text" id="inp" placeholder="0">
+	  </form>
+	  <table>
+        <tr>
+		    <td>
+			<input type= "button" id="btn1" value="7" onclick="insert(7)">
+			</td>
+			<td>
+			<input type= "button" id="btn1" value="8" onclick="insert(8)">
+			</td>
+			<td>
+			<input type= "button" id="btn1" value="9" onclick="insert(9)">
+			</td>
+			<td>
+			<input type= "button" id="btn2" value="/" onclick="insert("/")">
+			</td>
+           </tr>
+           <tr>
+            <td>
+                <input type= "button" id="btn1" value="4" onclick="insert(4)">
+                </td>
+                <td>
+                    <input type= "button" id="btn1" value="5" onclick="insert(5)">
+                    </td>
+                    <td>
+                        <input type= "button" id="btn1" value="6" onclick="insert(6)">
+                        </td>
+                        <td>
+                            <input type= "button" id="btn2" value="+" onclick="insert("+")">
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <input type= "button" id="btn1" value="1" onclick="insert(1)">
+                                </td>
+                                <td>
+                                    <input type= "button" id="btn1" value="2" onclick="insert(2)">
+                                    </td>
+                                    <td>
+                                        <input type= "button" id="btn1" value="3" onclick="insert(3)">
+                                        </td>
+                                        <td>
+                                            <input type= "button" id="btn2" value="-" onclick="insert("-")">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type= "button" id="btn3" value="C" onclick="clearInput()">
+                                                </td>
+<td>
+<input type= "button" id="btn3" value="=" onclick="finalvalue()">
+</td>
+<td>
+<input type= "button" id="btn1" value="0" onclick="insert(0)">
+</td>
+<td>
+<input type= "button" id="btn2" value="x" onclick="insert(*)">
+</td>
+</tr>
+</table>
+</body>
+ </html>
